@@ -16,7 +16,9 @@ const refs = {
   stop: document.querySelector('button[data-action="stop"]'),
   body: document.querySelector('body'),
 };
+
 let colorChangeInterval = null;
+let currentColor = '#ffffff';
 
 refs.start.addEventListener('click', startColorChange);
 refs.stop.addEventListener('click', stopColorChange);
